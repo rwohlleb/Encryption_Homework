@@ -7,9 +7,11 @@ import javax.crypto.IllegalBlockSizeException;
 import javax.crypto.KeyGenerator;
 import javax.crypto.NoSuchPaddingException;
 import javax.crypto.SecretKey;
-public class Encryption {
-	public static void main(String[] argv) {
-		
+
+public class DesEncryption 
+{
+	public void Encrypt()
+	{
 		try{
 
 		    KeyGenerator keygenerator = KeyGenerator.getInstance("DES");
@@ -62,7 +64,7 @@ public class Encryption {
 		{
 			e.printStackTrace();
 		} 
-	   
+
 	}
 
 }
